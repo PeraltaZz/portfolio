@@ -8,3 +8,52 @@
   grid-template-columns: 1fr;
 }
 
+/* Slide */
+body {
+  margin: 0px;
+}
+
+ul {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+#projects img {
+  display: block;
+  max-width: 100%;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+  padding: 20px;
+}
+
+.slide-projects {
+  display: flex;
+}
+
+.slide-projects:hover {
+  will-change: transform;
+}
+
+.slide-projects li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 20px;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.slide-projects li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+
+

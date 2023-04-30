@@ -1,25 +1,16 @@
+@import "geral.css";
 @import "fonts.css";
 @import "header.css";
 @import "introduction.css";
 @import "about.css";
 @import "qualification.css";
 @import "projects.css";
-@import"slide.css";
 @import"contato.css";
+@import"footer.css";
 
 
 
 
 
 
-*{
-  list-style: none;
-}
 
-ul {
-  padding-inline-start: 0px;
-}
-
-button{
-  border: none;
-}
