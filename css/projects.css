@@ -1,0 +1,10 @@
+#projects {
+  padding: 60px 0px 60px 0px;
+  background-color: #fafafa;
+}
+
+.custom-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+

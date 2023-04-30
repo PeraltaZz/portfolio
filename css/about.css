@@ -1,0 +1,162 @@
+#about {
+  background-color: #f5f5f5;
+  padding: 60px 0px 60px 0px;
+}
+
+.section-title {
+  text-align: center;
+  width: 100%;
+  justify-self: center;
+}
+
+#about-all {
+  row-gap: 80px;
+  justify-content: space-between;
+}
+
+/* Skills */
+.skills {
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  row-gap: 40px;
+}
+
+.skills-card {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  padding: 40px 60px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: max-content;
+  align-self: center;
+}
+
+.skills-card > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #525252;
+  font: 400 1.125rem/1.25 "Roboto", sans-serif;
+}
+
+/* Apresentacao */
+
+.apresentation {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.apresentation-division {
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+
+.apresentation-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+
+  max-width: 240px;
+}
+
+.apresentation-card h3 {
+  min-width: 120px;
+  text-align: center;
+  color: #3d3d3d;
+  font: 500 1.25rem/1.25 "Comfortaa", sans-serif;
+}
+
+.apresentation-card h4 {
+  font: 400 1.125rem/1.25 "Roboto", sans-serif;
+  color: #7a7a7a;
+}
+
+@media (max-width: 992px) {
+
+
+  .apresentation-card img {
+    max-width: 40px;
+  }
+}
+
+@media (max-width: 720px) {
+  .apresentation {
+    gap: 40px;
+  }
+
+  .apresentation-card h3 {
+    font-size: 1.125rem;
+  }
+
+  .apresentation-card h4 {
+    font-size: 1rem;
+  }
+  #about-all {
+    row-gap: 60px;
+  }
+}
+
+@media (max-width: 580px) {
+  #about-all {
+    row-gap: 40px;
+  }
+
+  .skills {
+    gap: 20px;
+  }
+
+  .skills-card {
+    gap: 32px;
+    padding:32px;
+  }
+  .skills-card > div {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .apresentation-card {
+    padding: 12px 24px;
+  }
+  .skills-card {
+    gap: 28px;
+    padding: 32px 28px;
+  }
+  .skills-card img {
+    max-width: 30px;
+  }
+}
+
+@media (max-width: 380px) {
+
+
+  .apresentation-card h3 {
+    font-size: 1rem;
+  }
+
+  .apresentation-card h4 {
+    font-size: 0.875rem;
+  }
+  .apresentation-card img {
+    max-width: 32px;
+  }
+
+  .skills-card {
+    gap: 20px;
+    padding: 20px;
+  }
+  .skills-card img {
+    max-width: 24px;
+  }
+}

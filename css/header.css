@@ -1,0 +1,18 @@
+/* Header */
+.header-bg {
+    background-color: #141414;
+  }
+  
+  .nav-item a {
+    color: #fff;
+    font-family: "Comfortaa";
+    font-size: 1.125rem;
+  }
+  
+  .nav-item a:hover, .nav-item a:focus {
+    color: #dadada;
+  }
+  
+  #hamburguer-menu {
+    color: #fff;
+  }

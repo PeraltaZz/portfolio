@@ -1,0 +1,23 @@
+@import "fonts.css";
+@import "header.css";
+@import "introduction.css";
+@import "about.css";
+@import "qualification.css";
+@import "projects.css";
+@import"slide.css";
+
+
+
+
+body {
+  height: 6000px;
+}
+
+
+*{
+  list-style: none;
+}
+
+ul {
+  padding-inline-start: 0px;
+}
