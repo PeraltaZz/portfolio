@@ -5,13 +5,11 @@
 @import "qualification.css";
 @import "projects.css";
 @import"slide.css";
+@import"contato.css";
 
 
 
 
-body {
-  height: 6000px;
-}
 
 
 *{
@@ -20,4 +18,8 @@ body {
 
 ul {
   padding-inline-start: 0px;
+}
+
+button{
+  border: none;
 }

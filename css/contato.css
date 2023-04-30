@@ -1,0 +1,71 @@
+#contato {
+  padding: 60px 0px 60px 0px;
+  background-color: #f5f5f5;
+}
+
+#contact-all {
+  justify-content: center;
+  align-items: center;
+  row-gap: 60px;
+}
+
+.form-card {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  background-color: #fff;
+  color: black;
+  width: 90%;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  background-color: black;
+  color: #fff;
+  padding: 60px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+.contact-info img {
+  max-width: 100%;
+}
+
+.contact-info ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-info h2 {
+  font: 500 1.5rem/1.25 "Comfortaa", sans-serif;
+}
+.contact-info ul li {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font: 400 1rem/1.5 "Roboto", sans-serif;
+}
+
+.contact-info ul li i {
+  font-size: 20px;
+}
+
+.social-contact {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: center;
+}
+
+.social-contact i {
+  font-size: 32px;
+}
+
+.forms {
+  padding: 60px;
+}
