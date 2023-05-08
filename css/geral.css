@@ -1,12 +1,16 @@
-*{
-    list-style: none;
-  }
-  
-  ul {
-    padding-inline-start: 0px;
-  }
-  
-  button{
-    border: none;
-  }
+* {
+  list-style: none;
+  text-decoration: none;
+}
 
+ul {
+  padding-inline-start: 0px;
+}
+
+button {
+  border: none;
+}
+
+a {
+  padding: 8px;
+}
