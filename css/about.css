@@ -4,14 +4,14 @@
 }
 
 .section-title {
+  justify-self: center;
   text-align: center;
   width: 100%;
-  justify-self: center;
 }
 
 #about-all {
-  row-gap: 80px;
   justify-content: space-between;
+  row-gap: 80px;
 }
 
 /* Skills */
@@ -40,7 +40,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  color: #525252;
+  color: #292929;
   font: 400 1.125rem/1.25 "Roboto", sans-serif;
 }
 
@@ -73,13 +73,13 @@
 .apresentation-card h3 {
   min-width: 120px;
   text-align: center;
-  color: #3d3d3d;
+  color: #292929;
   font: 500 1.25rem/1.25 "Comfortaa", sans-serif;
 }
 
 .apresentation-card h4 {
   font: 400 1.125rem/1.25 "Roboto", sans-serif;
-  color: #7a7a7a;
+  color: #525252;
 }
 
 @media (max-width: 992px) {

@@ -1,6 +1,6 @@
 #contato {
   padding: 60px 0px 60px 0px;
-  background-color: #f5f5f5;
+  background-color: #fafafa;
 }
 
 #contact-all {
@@ -76,6 +76,10 @@
   box-shadow: none;
   border: 2px solid black;
   box-shadow: 2px 2px 4px rgba(20, 20, 20, 0.5);
+}
+
+.send-message .btn-acess{
+  height: 40px;
 }
 
 label {

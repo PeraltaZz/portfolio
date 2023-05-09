@@ -27,7 +27,15 @@
   justify-content: space-between;
   align-items: center;
   font: 400 1.25rem/1.8 sans-serif;
-  color: #3d3d3d;
+  color: #292929;
+}
+.course-list li a{
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+}
+
+.course-list li a:hover{
+  transform: translateY(-5px) scale(1.1);
 }
 
 .carousel-indicators [data-bs-target] {

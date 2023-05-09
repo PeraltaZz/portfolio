@@ -57,7 +57,7 @@ function updateInfo(index) {
   const githubHref = slides[index].github;
 
   const techList = technologies
-    .map((tech) => `<li><img src="${tech.icon}" alt="">${tech.name}</li>`)
+    .map((tech) => `<li><img src="${tech.icon}" alt=""></li>`)
     .join("");
 
   const html = `

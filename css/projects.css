@@ -3,12 +3,13 @@
   max-width: 1400px;
   padding: 60px 40px 60px 40px;
   background: #f5f5f5;
+  overflow: hidden;
 }
 
 .custom-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 20px;
+  gap: 40px;
 }
 body {
   margin: 0px;
@@ -52,7 +53,7 @@ ul {
 .infos-projects ul {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 10px;
   padding: 0px 20px;
 }
 .infos-projects ul li {
@@ -79,6 +80,14 @@ ul {
 }
 .acess-details img {
   width: 32px;
+}
+
+.acess-details{
+  transition: transform 0.2s ease-in-out;
+}
+
+.acess-details:hover{
+  transform: scale(1.1);
 }
 
 /* Slide */
@@ -127,6 +136,18 @@ ul {
 .infos-projects.show {
   opacity: 1;
   transform: translateX(0);
+}
+
+.infos-projects li img{
+  display: inline-block;
+  margin-right: 20px;
+  transform: translateY(0);
+  transition: transform 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.infos-projects li img:hover{
+  transform: translateY(-5px) scale(1.1);
 }
 
 .slider-img {
