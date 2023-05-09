@@ -1,6 +1,8 @@
 * {
   list-style: none;
   text-decoration: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 ul {
@@ -11,6 +13,6 @@ button {
   border: none;
 }
 
-a {
-  padding: 8px;
+h2{
+  margin-bottom: 0px;
 }

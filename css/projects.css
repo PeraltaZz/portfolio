@@ -6,6 +6,8 @@
 .custom-grid {
   display: grid;
   grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 0px 40px;
 }
 
 /* Slide */
@@ -19,41 +21,112 @@ ul {
   list-style: none;
 }
 
-#projects img {
-  display: block;
-  max-width: 100%;
+.slide-card {
+  background: url(../img/img-projects/todo-bg.jpg);
+  background-size: cover;
+  padding: 40px 80px 40px 80px;
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  border-radius: 20px;
+  
 }
 
-.slide-wrapper {
-  overflow: hidden;
-  padding: 20px;
-}
-
-.slide-projects {
+/* Infos */
+.infos-projects {
   display: flex;
+  flex-direction: column;
+  padding: 20px;
+  justify-content: space-evenly;
 }
 
-.slide-projects:hover {
-  will-change: transform;
+.infos-projects h2 {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 40px;
 }
 
-.slide-projects li {
-  flex-shrink: 0;
-  width: 80vw;
-  max-width: 800px;
-  margin: 0 20px;
-  border-radius: 4px;
-  overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
-  opacity: 0.8;
-  transform: scale(0.8);
-  transition: 0.4s;
+.infos-projects ul {
+  display: flex;
+  gap: 20px;
+}
+.infos-projects ul li {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.infos-projects .more-details {
+  display: flex;
+  gap: 10px;
 }
 
-.slide-projects li.active {
+.more-details a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+  background: #141414;
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+  color: #fafafa;
+  font: 500 1rem/1.33 "Comfortaa", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  max-height: 56px;
+}
+.more-details .github-acess {
+  border-radius: 50%;
+  max-width: 56px;
+  max-height: 56px;
+
+}
+
+/* Slide */
+.slider {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.slider-items {
+  transition: transform 0.5s ease;
+}
+
+.slider-img {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}
+
+
+.slide-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.slide-buttons button {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.slide-buttons button img {
+  width: 24px;
+  height: 24px;
+}
+
+.infos-projects {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+.infos-projects.show {
   opacity: 1;
-  transform: scale(1);
 }
-
-
-
