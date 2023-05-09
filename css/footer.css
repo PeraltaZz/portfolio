@@ -11,6 +11,14 @@
   gap: 40px;
 }
 
+.footer-img{
+  text-align: center;
+}
+
+.footer-img img{
+  width: 80%;
+}
+
 #footer ul {
   display: flex;
   flex-wrap: wrap;
