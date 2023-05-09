@@ -1,8 +1,8 @@
 #projects {
-  padding: 60px 20px 60px 20px;
-  background-color: #fafafa;
   margin: 0 auto;
   max-width: 1400px;
+  padding: 60px 40px 60px 40px;
+  background: #f5f5f5;
 }
 
 .custom-grid {
@@ -10,8 +10,6 @@
   grid-template-columns: 1fr;
   gap: 20px;
 }
-
-/* Slide */
 body {
   margin: 0px;
 }
@@ -22,16 +20,14 @@ ul {
   list-style: none;
 }
 
+/* Card */
 .slide-card {
-  background: url(../img/img-projects/todo-bg.jpg);
-  background-size: cover;
-  padding: 40px;
   display: grid;
   justify-content: center;
   grid-template-columns: 7fr 5fr;
-  border-radius: 20px;
   gap: 20px;
-  transition: opacity 0.3s ease-in-out;
+  padding: 40px;
+  border-radius: 20px;
 }
 
 /* Infos */
@@ -39,55 +35,50 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  gap: 40px;
+  height: fit-content;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  height: fit-content;
-  gap: 40px;
 }
 
 .infos-projects h2 {
   font: 500 2rem/1.25 "Comfortaa", sans-serif;
+  padding-top: 20px;
 }
-
+.infos-projects p {
+  padding: 0px 20px;
+}
 .infos-projects ul {
   display: flex;
   justify-content: center;
   gap: 20px;
+  padding: 0px 20px;
 }
 .infos-projects ul li {
   display: flex;
-  gap: 8px;
   align-items: center;
+  gap: 8px;
   font: 400 1.125rem/1.25 "Roboto", sans-serif;
 }
-.infos-projects .more-details {
+
+.more-details {
   display: flex;
-  gap: 10px;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #000000;
+  border-radius: 0px 0px 20px 20px;
+  padding: 0px 20px;
 }
 
-.more-details a {
+.acess-details {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding: 16px 20px;
-  gap: 10px;
-  background: #141414;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.1);
-  border-radius: 50px;
-  color: #fafafa;
-  font: 500 1rem/1.33 "Comfortaa", sans-serif;
-  text-transform: uppercase;
-  text-decoration: none;
-  max-height: 56px;
-  text-align: center;
+  padding: 10px;
+  cursor: pointer;
 }
-.more-details .github-acess {
-  border-radius: 50%;
-  max-width: 56px;
-  max-height: 56px;
+.acess-details img {
+  width: 32px;
 }
 
 /* Slide */
@@ -99,37 +90,54 @@ ul {
 }
 
 .slider-img {
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 20px;
   width: 100%;
   height: auto;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border-radius: 20px;
 }
-
-
 .slide-buttons {
   display: flex;
-  gap: 20px;
+  gap: 40px;
 }
 
 .slide-buttons button {
-  width: 32px;
-  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 32px;
+  height: 32px;
+  background: #000000;
   border-radius: 50%;
+}
+
+.slide-buttons button:hover {
+  background: #242424;
 }
 .slide-buttons button img {
   width: 24px;
-  height: 24px;
+  height: auto;
 }
-
+/* Animação */
 .infos-projects {
   opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  transform: translateX(100%);
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
 }
+
 .infos-projects.show {
   opacity: 1;
+  transform: translateX(0);
+}
+
+.slider-img {
+  opacity: 0;
+  transform: translateX(-100%);
+  transition: opacity 0.3s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.slider-img.show {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 @media (max-width: 1024px) {
@@ -137,28 +145,12 @@ ul {
     display: flex;
     flex-direction: column;
   }
-  .slider-items {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-}
-
-@media (max-width: 800px) {
-  .slide-card {
-    padding: 40px;
-  }
-  .slider-img {
-    width: 100%;
-    height:auto;
-  }
 }
 
 @media (max-width: 600px) {
   .slide-card {
     padding: 20px;
   }
-
 
   .infos-projects h2 {
     font: 500 1.5rem/1.25 "Comfortaa", sans-serif;
@@ -172,44 +164,34 @@ ul {
     gap: 20px;
   }
   .infos-projects ul li {
-    display: flex;
-    gap: 8px;
-    align-items: center;
     font: 400 1rem/1.25 "Roboto", sans-serif;
   }
   .infos-projects ul li img {
     width: 28px;
   }
-  .infos-projects .more-details {
-    display: flex;
-    gap: 10px;
+  .slide-buttons button {
+    width: 28px;
+    height: 28px;
   }
 
-  .more-details a {
-    padding: 16px;
-    gap: 10px;
-    font: 500 1rem/1.33 "Comfortaa", sans-serif;
-    max-height: 40px;
+  .slide-buttons button:hover {
+    background: #242424;
   }
-  .more-details .github-acess {
-    border-radius: 50%;
-    max-width: 40px;
-    max-height: 40px;
-  }
-  .more-details .github-acess img {
+  .slide-buttons button img {
     width: 20px;
+    height: auto;
+  }
+  .acess-details img {
+    width: 28px;
   }
 }
-@media (max-width: 400px){
-  #projects{
+
+@media (max-width: 400px) {
+  #projects {
     padding: 60px 0px 60px 0px;
   }
-  .infos-projects{
+  .slide-card {
     padding: 10px;
-    
-  }
-  .slide-card{
-    padding:10px ;
   }
   .infos-projects ul li {
     display: flex;
@@ -220,17 +202,4 @@ ul {
   .infos-projects ul li img {
     width: 28px;
   }
-  .infos-projects ul {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-  }
 }
-
-.slide-card {
-  transition: background-image 0.3s ease-in-out;
-}
-
-

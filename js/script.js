@@ -1,9 +1,8 @@
-
 const sliderItems = document.querySelector(".slider-items");
 const sliderImgs = document.querySelector(".slider-img");
 const prevBtn = document.querySelector(".prev-btn");
 const nextBtn = document.querySelector(".next-btn");
-const slideCard=document.querySelector(".slide-card")
+const slideCard = document.querySelector(".slide-card");
 let currentIndex = 0;
 
 const slides = [
@@ -18,8 +17,7 @@ const slides = [
     ],
     link: { label: "Acessar Projeto", href: "#" },
     github: "#",
-    imagem:"img/img-projects/todo.jpg",
-    background:"url(img/img-projects/todo-bg.jpg)"
+    imagem: "img/img-projects/todo.jpg",
   },
   {
     title: "Clima App",
@@ -32,11 +30,10 @@ const slides = [
     ],
     link: { label: "Acessar Projeto", href: "#" },
     github: "#",
-    imagem:"img/img-projects/clima.jpg",
-    background:"url(img/img-projects/clima-bg.jpg)"
+    imagem: "img/img-projects/clima.jpg",
   },
   {
-    title: "CEP App",
+    title: "Cep App",
     description:
       "O aplicativo permite que o usuário insira um CEP e encontre o endereço correspondente. Também permite que o usuário insira um endereço e encontre o CEP correspondente ",
     technologies: [
@@ -46,9 +43,7 @@ const slides = [
     ],
     link: { label: "Acessar Projeto", href: "#" },
     github: "#",
-    imagem:"img/img-projects/cep.jpg",
-    background:"url(img/img-projects/cep-bg.jpg)"
-
+    imagem: "img/img-projects/cep.jpg",
   },
 ];
 
@@ -70,8 +65,8 @@ function updateInfo(index) {
     <p>${description}</p>
     <ul>${techList}</ul>
     <div class="more-details">
-      <a class="" href="${linkHref}">${linkLabel}</a>
-      <a class="github-acess" href="${githubHref}"><img src="img/icons/github-icon-white.svg" alt=""></a>
+    <a class="acess-details" href="${githubHref}"><img src="img/icons/github-icon.svg" alt=""></a>
+    <a class="acess-details" href="${githubHref}"><img src="img/icons/acess-icon.svg" alt=""></a>
     </div>
   `;
 
@@ -80,48 +75,30 @@ function updateInfo(index) {
   setTimeout(() => {
     info.innerHTML = html;
     info.classList.add("show");
-  }, 300); // espera 300 milissegundos antes de atualizar o HTML e adicionar a classe "show"
+  }, 600); // espera 300 milissegundos antes de atualizar o HTML e adicionar a classe "show"
 }
 // adiciona evento de clique para botão "Anterior"
 prevBtn.addEventListener("click", () => {
-    // atualiza o índice atual
-    currentIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-    // atualiza o slider com base no novo índice
-    updateSlider();
-  });
-  
-  // adiciona evento de clique para botão "Próximo"
-  nextBtn.addEventListener("click", () => {
-    // atualiza o índice atual
-    currentIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-    // atualiza o slider com base no novo índice
-    updateSlider();
-  });
-  
-  function updateSlider() {
-    // seleciona a imagem do slider
-    const sliderImgs = document.querySelector(".slider-img");
-  
-    // atualiza a imagem do slider com base no novo índice
+  // atualiza o índice atual
+  currentIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+  // atualiza o slider com base no novo índice
+  updateSlider();
+});
+
+// adiciona evento de clique para botão "Próximo"
+nextBtn.addEventListener("click", () => {
+  // atualiza o índice atual
+  currentIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+  // atualiza o slider com base no novo índice
+  updateSlider();
+});
+
+function updateSlider() {
+  updateInfo(currentIndex);
+  sliderImgs.classList.remove("show");
+  setTimeout(() => {
+    sliderImgs.classList.add("show");
     sliderImgs.src = slides[currentIndex].imagem;
-    slideCard.style.background = slides[currentIndex].background;
+  }, 600);
   
-    // adiciona a classe "show" para acionar a transição de opacidade
-    sliderImgs.classList.remove("show");
-    setTimeout(() => {
-      sliderImgs.classList.add("show");
-    }, 300); // espera 50 milissegundos antes de adicionar a classe "show"
-    
-    // atualiza as informações do slider com base no novo índice
-    updateInfo(currentIndex);
-  }
-  
-  
-  
-
-
-
-
-  
-
-
+}
