@@ -99,17 +99,29 @@ prevBtn.addEventListener("click", () => {
   });
   
   function updateSlider() {
+    // seleciona a imagem do slider
+    const sliderImgs = document.querySelector(".slider-img");
+  
     // atualiza a imagem do slider com base no novo índice
     sliderImgs.src = slides[currentIndex].imagem;
-    slideCard.style.background=slides[currentIndex].background;
-   
+    slideCard.style.background = slides[currentIndex].background;
+  
+    // adiciona a classe "show" para acionar a transição de opacidade
+    sliderImgs.classList.remove("show");
+    setTimeout(() => {
+      sliderImgs.classList.add("show");
+    }, 300); // espera 50 milissegundos antes de adicionar a classe "show"
+    
     // atualiza as informações do slider com base no novo índice
     updateInfo(currentIndex);
   }
+  
+  
   
 
 
 
 
+  
 
 
