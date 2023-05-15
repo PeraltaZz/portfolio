@@ -19,7 +19,7 @@
   color: black;
   width: 90%;
   padding: 0px;
-  border: 2px solid black;
+  
 }
 
 .contact-info {
@@ -68,14 +68,12 @@
   padding: 60px;
 }
 
-.form-control {
-  border: 2px solid black;
-}
+
 
 .form-control:focus {
   box-shadow: none;
-  border: 2px solid black;
-  box-shadow: 2px 2px 4px rgba(20, 20, 20, 0.5);
+  
+ border: 1px solid #000;
 }
 
 .send-message .btn-acess{
