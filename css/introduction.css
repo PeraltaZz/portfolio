@@ -1,5 +1,5 @@
 #introduction {
- padding: 120px 0px 120px 0px;
+ padding: 210px 0px 210px 0px;
  background-color: #fafafa;
 }
 
@@ -49,7 +49,7 @@
   background-color: #000000;
   color: #fafafa;
   padding: 16px 20px;
-  border-radius: 4px;
+  border-radius: 20px;
   font: 500 1rem/1.33 "Comfortaa", sans-serif;
   text-transform: uppercase;
   text-decoration: none;
@@ -75,7 +75,7 @@
 
 @media (max-width: 992px) {
   #introduction {
- padding: 40px 0px 40px 0px;
+ padding: 130px 0px 130px 0px;
     
   }
 

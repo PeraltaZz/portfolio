@@ -15,8 +15,8 @@ const slides = [
       { name: "CSS", icon: "img/icons/css-icon.svg" },
       { name: "JavaScript", icon: "img/icons/javascript_icon.svg" },
     ],
-    link: { label: "Acessar Projeto", href: "#" },
-    github: "#",
+    link: "https://peraltazz.github.io/todolist/",
+    github: "https://github.com/PeraltaZz/todolist",
     imagem: "img/img-projects/todo.jpg",
   },
   {
@@ -28,8 +28,8 @@ const slides = [
       { name: "CSS", icon: "img/icons/css-icon.svg" },
       { name: "JavaScript", icon: "img/icons/javascript_icon.svg" },
     ],
-    link: { label: "Acessar Projeto", href: "#" },
-    github: "#",
+    link: "https://peraltazz.github.io/clima-app/",
+    github: "https://github.com/PeraltaZz/clima-app",
     imagem: "img/img-projects/clima.jpg",
   },
   {
@@ -41,8 +41,8 @@ const slides = [
       { name: "CSS", icon: "img/icons/css-icon.svg" },
       { name: "JavaScript", icon: "img/icons/javascript_icon.svg" },
     ],
-    link: { label: "Acessar Projeto", href: "#" },
-    github: "#",
+    link: "https://github.com/PeraltaZz/Descobrir-Cep",
+    github: "https://peraltazz.github.io/Descobrir-Cep/",
     imagem: "img/img-projects/cep.jpg",
   },
 ];
@@ -52,8 +52,7 @@ function updateInfo(index) {
   const title = slides[index].title;
   const description = slides[index].description;
   const technologies = slides[index].technologies;
-  const linkLabel = slides[index].link.label;
-  const linkHref = slides[index].link.href;
+  const link = slides[index].link;
   const githubHref = slides[index].github;
 
   const techList = technologies
@@ -65,31 +64,27 @@ function updateInfo(index) {
     <p>${description}</p>
     <ul>${techList}</ul>
     <div class="more-details">
-    <a class="acess-details" href="${githubHref}"><img src="img/icons/github-icon.svg" alt=""></a>
-    <a class="acess-details" href="${githubHref}"><img src="img/icons/acess-icon.svg" alt=""></a>
+    <a class="acess-details" href="${githubHref}" target="_blank"><img src="img/icons/github-icon.svg" alt="" ></a>
+    <a class="acess-details" href="${link}" target="_blank"><img src="img/icons/acess-icon.svg" alt="" ></a>
     </div>
   `;
 
-  // adiciona a classe "show" para acionar a transição de opacidade
   info.classList.remove("show");
   setTimeout(() => {
     info.innerHTML = html;
     info.classList.add("show");
-  }, 600); // espera 300 milissegundos antes de atualizar o HTML e adicionar a classe "show"
+  }, 600);
 }
-// adiciona evento de clique para botão "Anterior"
+
 prevBtn.addEventListener("click", () => {
-  // atualiza o índice atual
   currentIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-  // atualiza o slider com base no novo índice
+
   updateSlider();
 });
 
-// adiciona evento de clique para botão "Próximo"
 nextBtn.addEventListener("click", () => {
-  // atualiza o índice atual
   currentIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-  // atualiza o slider com base no novo índice
+
   updateSlider();
 });
 
@@ -100,5 +95,4 @@ function updateSlider() {
     sliderImgs.classList.add("show");
     sliderImgs.src = slides[currentIndex].imagem;
   }, 600);
-  
 }
