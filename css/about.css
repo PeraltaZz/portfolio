@@ -20,6 +20,18 @@
   flex-direction: column;
   height: max-content;
   row-gap: 40px;
+  position: relative;
+}
+
+.skills::before{
+  position: absolute;
+  content: "";
+  background-color: black;
+  width:3px;
+  height: 100%;
+  right: -40px;
+  border-radius: 50px;
+
 }
 
 .skills-card {
