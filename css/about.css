@@ -95,7 +95,9 @@
 }
 
 @media (max-width: 992px) {
-
+  .skills::before{
+    display: none;
+  }
 
   .apresentation-card img {
     max-width: 40px;
