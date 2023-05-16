@@ -101,10 +101,20 @@ label {
   .forms {
     padding: 40px;
   }
+  .contact-info {
+   padding: 40px;
+  }
+  .social-contact i {
+    font-size: 28px;
+    color: #fff;
+  }
 }
 
 @media (max-width: 380px) {
   .forms {
     padding: 20px;
   }
+  .contact-info {
+    padding: 20px;
+   }
 }
