@@ -19,7 +19,6 @@
   color: black;
   width: 90%;
   padding: 0px;
-  
 }
 
 .contact-info {
@@ -68,15 +67,13 @@
   padding: 60px;
 }
 
-
-
 .form-control:focus {
   box-shadow: none;
-  
- border: 1px solid #000;
+
+  border: 1px solid #000;
 }
 
-.send-message .btn-acess{
+.send-message .btn-acess {
   max-height: 48px;
 }
 
@@ -102,7 +99,7 @@ label {
     padding: 40px;
   }
   .contact-info {
-   padding: 40px;
+    padding: 40px;
   }
   .social-contact i {
     font-size: 28px;
@@ -116,5 +113,5 @@ label {
   }
   .contact-info {
     padding: 20px;
-   }
+  }
 }

@@ -1,0 +1,194 @@
+.toggle-switch {
+  position: absolute;
+  right: 10%;
+  top: 100px;
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  --dark: #000000;
+  --light: #ffffff;
+}
+
+.switch-label {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark);
+  border-radius: 25px;
+  cursor: pointer;
+  border: 3px solid var(--dark);
+}
+
+.checkbox {
+  position: absolute;
+  display: none;
+}
+
+.slider-mode {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.slider-mode::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--light);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.checkbox:checked ~ .slider-mode::before {
+  -webkit-transform: translateX(28px);
+  -ms-transform: translateX(28px);
+  transform: translateX(28px);
+}
+
+body.dark-mode {
+  /* Introduction */
+  #introduction {
+    background-color: #121212;
+  }
+  .btn-acess {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  .title h1::before {
+    content: url(../img/icons/detalhe-icon-dark.svg);
+  }
+  .btn-acess:hover {
+    background-color: #dadada;
+  }
+
+  .btn-acess img {
+    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
+      brightness(106%) contrast(106%);
+  }
+
+  #introduction-icons a img {
+    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
+      brightness(106%) contrast(106%);
+  }
+
+  /* About */
+  #about {
+    background-color: #171717;
+  }
+
+  .skills-card {
+    background: #000000;
+  }
+
+  .skills-card > div {
+    color: #d8d8d8;
+  }
+
+  .apresentation-card {
+    background: #000000;
+  }
+
+  .apresentation-card img {
+    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
+      brightness(106%) contrast(106%);
+  }
+
+  .apresentation-card h3 {
+    color: #ffffff;
+  }
+
+  .apresentation-card h4 {
+    color: #ddd;
+  }
+
+  /* Qualification */
+
+  #qualification {
+    background-color: #121212;
+  }
+
+  .slide-container-course {
+    background-color: #000000;
+  }
+
+  .course-list li {
+    color: #d8d8d8;
+  }
+
+  .course-list li a img {
+    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
+      brightness(106%) contrast(106%);
+  }
+
+  /* Projects */
+
+  #projects {
+    background: #171717;
+  }
+
+  .infos-projects {
+    background: #000000;
+  }
+
+  .infos-projects h2 {
+    color: #ffffff;
+  }
+
+  .more-details {
+    background-color: #121212;
+  }
+
+  /* Contact */
+  #contato {
+    background-color: #121212;
+  }
+
+  .send-message .btn-acess {
+    background-color: #000000;
+    color: #ffffff;
+  }
+
+  .send-message .btn-acess:hover {
+    background-color: #141414;
+  }
+
+  .send-message .btn-acess img {
+    filter: none;
+  }
+
+  /* Fonts */
+  .title h1 {
+    color: #ffffff;
+  }
+
+  .title h2 {
+    color: #f2f2f2;
+  }
+
+  .custom-p{
+    color: #ddd;
+  }
+
+  .section-title h1 {
+    color: #ffffff;
+  }
+
+  .section-title h2 {
+    color: #ddd;
+  }
+
+  .section-title h3 {
+    color: #ffffff;
+  }
+
+  .section-title h4 {
+    color: #ddd;
+  }
+}

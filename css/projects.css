@@ -60,7 +60,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  font: 400 1.125rem/1.25 "Roboto", sans-serif;
 }
 
 .more-details {
@@ -82,11 +81,11 @@ ul {
   width: 32px;
 }
 
-.acess-details{
+.acess-details {
   transition: transform 0.2s ease-in-out;
 }
 
-.acess-details:hover{
+.acess-details:hover {
   transform: scale(1.1);
 }
 
@@ -138,13 +137,13 @@ ul {
   transform: translateX(0);
 }
 
-.infos-projects li img{
+.infos-projects li img {
   transform: translateY(0);
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
 }
 
-.infos-projects li img:hover{
+.infos-projects li img:hover {
   transform: translateY(-5px) scale(1.1);
 }
 
@@ -175,7 +174,7 @@ ul {
   .slide-card {
     padding: 20px;
   }
-  .infos-projects{
+  .infos-projects {
     gap: 20px;
   }
   .infos-projects h2 {

@@ -38,15 +38,14 @@
 #introduction-icons a:hover {
   transform: translateY(-5px) scale(1.1);
 }
-#introduction-infos{
+#introduction-infos {
   position: relative;
 }
-#introduction-infos::before{
+#introduction-infos::before {
   position: absolute;
   content: url(../img/icons/dec-icon.svg);
   right: 20px;
   bottom: 0;
-
 }
 
 .btn-acess {
@@ -104,7 +103,7 @@
   #introduction-all {
     gap: 20px;
   }
-  #introduction-infos::before{
+  #introduction-infos::before {
     display: none;
   }
 
@@ -129,7 +128,7 @@
   #introduction-img img {
     display: none;
   }
-  .title h1::before{
+  .title h1::before {
     display: none;
   }
   .title h2::before {

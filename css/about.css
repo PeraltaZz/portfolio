@@ -23,15 +23,14 @@
   position: relative;
 }
 
-.skills::before{
+.skills::before {
   position: absolute;
   content: "";
   background-color: black;
-  width:3px;
+  width: 3px;
   height: 100%;
   right: -40px;
   border-radius: 50px;
-
 }
 
 .skills-card {
@@ -95,7 +94,7 @@
 }
 
 @media (max-width: 992px) {
-  .skills::before{
+  .skills::before {
     display: none;
   }
 
@@ -132,7 +131,7 @@
 
   .skills-card {
     gap: 32px;
-    padding:32px;
+    padding: 32px;
   }
   .skills-card > div {
     font-size: 1rem;
@@ -153,8 +152,6 @@
 }
 
 @media (max-width: 380px) {
-
-
   .apresentation-card h3 {
     font-size: 1rem;
   }

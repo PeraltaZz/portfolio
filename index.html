@@ -38,7 +38,7 @@
 
 </head>
 
-<body>
+<body >
     <header class="fixed-top">
         <nav class="navbar" id="navbar">
             <div class="">
@@ -78,11 +78,18 @@
         </nav>
     </header>
     <main class="container-fluid" id="introduction">
+    
         <div class="container">
+            <div class="toggle-switch">
+                <label class="switch-label">
+                  <input type="checkbox" class="checkbox">
+                  <span class="slider-mode"></span>
+                </label>
+              </div>  
             <div class="row" id="introduction-all">
                 <div class="col-12 col-lg-4 order-lg-3"
                     id="introduction-img">
-                    <img src="img/introduction-decoration.svg"
+                    <img src="img/introduction-decoration-dark.svg"
                         alt="uma foto do desenvolvedor do site">
                 </div>
                 <div class="col-12 col-lg-1"
@@ -106,7 +113,7 @@
                         <h2>Desenvolvedor Front End</h2>
                     </div>
 
-                    <p>
+                    <p class="custom-p">
                         Sou um desenvolvedor Front-end no
                         Brasil. Crio designs atraentes e
                         intuitivos para interfaces de
@@ -156,7 +163,7 @@
                             </h4>
                         </div>
                     </div>
-                    <p>Eu sou um desenvolvedor Front-end com
+                    <p class="custom-p">Eu sou um desenvolvedor Front-end com
                         habilidades em UI/UX design e estou
                         atualmente cursando Análise e
                         Desenvolvimento de Sistemas. Além
@@ -164,7 +171,7 @@
                         possuo alguns projetos pessoais que
                         me
                         permitem aplicar os conhecimentos
-                        adquiridos durante o curso</p>
+                        adquiridos durante o curso.</p>
                 </div>
                 <div class="skills col-12 col-lg-5">
                     <div
@@ -296,7 +303,7 @@
                 </div>
                 <div
                     class="texto-qualificacao col-12 col-lg-5">
-                    <p>Atualmente estou no segundo semestre
+                    <p class="custom-p">Atualmente estou no segundo semestre
                         do
                         curso de Análise e Desenvolvimento
                         de
@@ -344,7 +351,7 @@
                 </div>
                 <div class="infos-projects show">
                     <h2>To do List</h2>
-                    <p>É uma aplicação simples que permite
+                    <p class="custom-p">É uma aplicação simples que permite
                         que o usuário faça uma lista de
                         tarefas a serem realizadas, com a
                         possibilidade de marcar as tarefas
@@ -461,6 +468,7 @@
     </footer>
     <script type="module" src="js/script.js" defer></script>
     <script src="js/menu-mobile.js" defer></script>
+    <script src="js/mode.js"></script>
 </body>
 
 </html>

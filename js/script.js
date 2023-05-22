@@ -61,7 +61,7 @@ function updateInfo(index) {
 
   const html = `
     <h2>${title}</h2>
-    <p>${description}</p>
+    <p class="custom-p">${description}</p>
     <ul>${techList}</ul>
     <div class="more-details">
     <a class="acess-details" href="${githubHref}" target="_blank"><img src="img/icons/github-icon.svg" alt="" ></a>
