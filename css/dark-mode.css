@@ -52,143 +52,138 @@
   transform: translateX(28px);
 }
 
-body.dark-mode {
-  /* Introduction */
-  #introduction {
-    background-color: #121212;
-  }
-  .btn-acess {
-    background-color: #ffffff;
-    color: #000000;
-  }
-  .title h1::before {
-    content: url(../img/icons/detalhe-icon-dark.svg);
-  }
-  .btn-acess:hover {
-    background-color: #dadada;
-  }
+/* Introduction */
+body.dark-mode #introduction {
+  background-color: #121212;
+}
 
-  .btn-acess img {
-    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
-      brightness(106%) contrast(106%);
-  }
+body.dark-mode .btn-acess {
+  background-color: #ffffff;
+  color: #000000;
+}
 
-  #introduction-icons a img {
-    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
-      brightness(106%) contrast(106%);
-  }
+body.dark-mode .title h1::before {
+  content: url(../img/icons/detalhe-icon-dark.svg);
+}
 
-  /* About */
-  #about {
-    background-color: #171717;
-  }
+body.dark-mode .btn-acess:hover {
+  background-color: #dadada;
+}
 
-  .skills-card {
-    background: #000000;
-  }
+body.dark-mode .btn-acess img {
+  filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+}
 
-  .skills-card > div {
-    color: #d8d8d8;
-  }
+body.dark-mode #introduction-icons a img {
+  filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+}
 
-  .apresentation-card {
-    background: #000000;
-  }
+/* About */
+body.dark-mode #about {
+  background-color: #171717;
+}
 
-  .apresentation-card img {
-    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
-      brightness(106%) contrast(106%);
-  }
+body.dark-mode .skills-card {
+  background: #000000;
+}
 
-  .apresentation-card h3 {
-    color: #ffffff;
-  }
+body.dark-mode .skills-card > div {
+  color: #d8d8d8;
+}
 
-  .apresentation-card h4 {
-    color: #ddd;
-  }
+body.dark-mode .apresentation-card {
+  background: #000000;
+}
 
-  /* Qualification */
+body.dark-mode .apresentation-card img {
+  filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+}
 
-  #qualification {
-    background-color: #121212;
-  }
+body.dark-mode .apresentation-card h3 {
+  color: #ffffff;
+}
 
-  .slide-container-course {
-    background-color: #000000;
-  }
+body.dark-mode .apresentation-card h4 {
+  color: #ddd;
+}
 
-  .course-list li {
-    color: #d8d8d8;
-  }
+/* Qualification */
+body.dark-mode #qualification {
+  background-color: #121212;
+}
 
-  .course-list li a img {
-    filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg)
-      brightness(106%) contrast(106%);
-  }
+body.dark-mode .slide-container-course {
+  background-color: #000000;
+}
 
-  /* Projects */
+body.dark-mode .course-list li {
+  color: #d8d8d8;
+}
 
-  #projects {
-    background: #171717;
-  }
+body.dark-mode .course-list li a img {
+  filter: invert(100%) sepia(3%) saturate(13%) hue-rotate(81deg) brightness(106%) contrast(106%);
+}
 
-  .infos-projects {
-    background: #000000;
-  }
+/* Projects */
+body.dark-mode #projects {
+  background: #171717;
+}
 
-  .infos-projects h2 {
-    color: #ffffff;
-  }
+body.dark-mode .infos-projects {
+  background: #000000;
+}
 
-  .more-details {
-    background-color: #121212;
-  }
+body.dark-mode .infos-projects h2 {
+  color: #ffffff;
+}
 
-  /* Contact */
-  #contato {
-    background-color: #121212;
-  }
+body.dark-mode .more-details {
+  background-color: #121212;
+}
 
-  .send-message .btn-acess {
-    background-color: #000000;
-    color: #ffffff;
-  }
+/* Contact */
+body.dark-mode #contato {
+  background-color: #121212;
+}
 
-  .send-message .btn-acess:hover {
-    background-color: #141414;
-  }
+body.dark-mode .send-message .btn-acess {
+  background-color: #000000;
+  color: #ffffff;
+}
 
-  .send-message .btn-acess img {
-    filter: none;
-  }
+body.dark-mode .send-message .btn-acess:hover {
+  background-color: #141414;
+}
 
-  /* Fonts */
-  .title h1 {
-    color: #ffffff;
-  }
+body.dark-mode .send-message .btn-acess img {
+  filter: none;
+}
 
-  .title h2 {
-    color: #f2f2f2;
-  }
+/* Fonts */
+body.dark-mode .title h1 {
+  color: #ffffff;
+}
 
-  .custom-p{
-    color: #ddd;
-  }
+body.dark-mode .title h2 {
+  color: #f2f2f2;
+}
 
-  .section-title h1 {
-    color: #ffffff;
-  }
+body.dark-mode .custom-p {
+  color: #ddd;
+}
 
-  .section-title h2 {
-    color: #ddd;
-  }
+body.dark-mode .section-title h1 {
+  color: #ffffff;
+}
 
-  .section-title h3 {
-    color: #ffffff;
-  }
+body.dark-mode .section-title h2 {
+  color: #ddd;
+}
 
-  .section-title h4 {
-    color: #ddd;
-  }
+body.dark-mode .section-title h3 {
+  color: #ffffff;
+}
+
+body.dark-mode .section-title h4 {
+  color: #ddd;
 }
